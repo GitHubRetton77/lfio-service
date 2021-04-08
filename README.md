@@ -17,7 +17,7 @@ Github Code URL: https://github.com/GitHubRetton77/lfio-service
 
 ## Run Instructions (when all dependencies are installed)
 1. From a fresh clone from Github, on a terminal, navigate to the root of the project and get code dependencies and build the project using Maven by running  `mvn -U clean package`
-2. `mvn -U clean package` will generate the machine code in form for classes inside a directory named `target` on the root of the project
+2. `mvn -U clean package` will generate the machine code in form of classes inside a directory named `target` on the root of the project
 3. One of the machine code file inside `target` is `kanban-service-1.0.0.jar`. Again on a terminal, run the kanban service with `java -jar JAR_LOCATION` replacing `JAR_LOCATION` with the location where `kanban-service-1.0.0.jar` is created in your computer like ` 
 java -jar /Users/retton/code/kanban-service-1.0.0.jar`
 4. All is well if you find the 2 messages at the bottom of the start up logs:
