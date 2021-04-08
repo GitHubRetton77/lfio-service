@@ -1,5 +1,5 @@
 # lfio-service
-Lightfeature IO Kanban Code Challenge
+Lightfeature IO Kanban Service Code Challenge
 
 Github Code URL: https://github.com/GitHubRetton77/lfio-service
 
