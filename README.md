@@ -33,5 +33,5 @@ java -jar /Users/retton/code/kanban-service-1.0.0.jar`
 - Installations of dependent stuff maybe tricky due to versions and compatibility. I'm not using most up to date versions of things because I did not need to update. States of our computers could affect at times. Please let me know if these instructions are not working smoothly.
 - I've tried deleting my local copy of the project and started from scatch by following the steps I've written here and worked for me.
 - I believe I implemented all of the required specifications. Wanted to do the optional auto generation of data but did not have time.
-- This is also working together with the 2nd component of the server spec on data state storage and load which I have in a separate project here: https://github.com/GitHubRetton77/lfio-data-util
+- This is also working together with the [UI](https://github.com/GitHubRetton77/lfio-user-interface) the other [2nd service component](https://github.com/GitHubRetton77/lfio-data-util) of the server spec on data state storage and load.
 
