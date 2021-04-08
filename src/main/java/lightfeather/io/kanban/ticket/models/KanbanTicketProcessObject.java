@@ -4,8 +4,6 @@ public class KanbanTicketProcessObject {
 
     private Long id;
 
-    private String name;
-
     private String description;
 
     private String user;
@@ -19,7 +17,6 @@ public class KanbanTicketProcessObject {
 
     public KanbanTicketProcessObject(KanbanTicket kanbanTicket){
         id = kanbanTicket.getId();
-        name = kanbanTicket.getName();
         description = kanbanTicket.getDescription();
         user = kanbanTicket.getUser();
         creationDate = kanbanTicket.getCreationDateString();
@@ -28,10 +25,6 @@ public class KanbanTicketProcessObject {
 
     public Long getId() {
         return id;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public String getDescription() {

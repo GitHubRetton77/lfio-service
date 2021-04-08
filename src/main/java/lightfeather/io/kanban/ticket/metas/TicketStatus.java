@@ -4,7 +4,7 @@ public enum TicketStatus {
 
     BACKLOG("Backlog"),
     IN_PROGRESS("In Progress"),
-    COMPLETED("Completed");
+    COMPLETED("Complete");
 
     public static TicketStatus fromStringForm(String stringForm) throws Exception {
         for(TicketStatus ticketStatus: TicketStatus.values()){

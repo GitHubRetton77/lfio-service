@@ -13,8 +13,6 @@ public class KanbanTicket {
     @GeneratedValue
     private Long id;
 
-    private String name;
-
     private String description;
 
     private String user;
@@ -30,22 +28,17 @@ public class KanbanTicket {
 
     public KanbanTicket(KanbanTicketProcessObject kanbanTicketProcessObject) throws Exception {
         id = kanbanTicketProcessObject.getId();
-        name = kanbanTicketProcessObject.getName();
         description = kanbanTicketProcessObject.getDescription();
         user = kanbanTicketProcessObject.getUser();
         status = TicketStatus.fromStringForm(kanbanTicketProcessObject.getStatus());
     }
 
-    public KanbanTicket(String name, String description, TicketStatus status, String user) {
-        this.name = name;
+    public KanbanTicket(String description, TicketStatus status, String user) {
         this.description = description;
         this.status = status;
         this.user = user;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public void setDescription(String description) {
         this.description = description;
@@ -61,10 +54,6 @@ public class KanbanTicket {
 
     public Long getId() {
         return id;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public String getDescription() {
@@ -84,7 +73,6 @@ public class KanbanTicket {
     }
 
     public void updateFromProcessObject(KanbanTicketProcessObject kanbanTicketProcessObject) throws Exception {
-        setName(kanbanTicketProcessObject.getName());
         setDescription(kanbanTicketProcessObject.getDescription());
         setUser(kanbanTicketProcessObject.getUser());
         TicketStatus status = TicketStatus.fromStringForm(kanbanTicketProcessObject.getStatus());
